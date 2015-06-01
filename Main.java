@@ -133,6 +133,9 @@ public class Main extends Application {
                 case RIGHT:
                     gm.setKey(3);
                     break;
+                case F5:
+                    gm.reset();
+                    break;
                 default:
                     break;
             }
