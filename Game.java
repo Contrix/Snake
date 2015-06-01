@@ -103,4 +103,17 @@ public class Game {
     public boolean getGameOver(){
         return (gameOver);
     }
+    
+    public void reset(){
+        snake.clear();
+        snake.add(new MyPoint(12,12));
+        snake.add(new MyPoint(12,13));
+        snake.add(new MyPoint(12,14));
+        snake.add(new MyPoint(12,15));
+        time[0] = 0;
+        time[1] = 0;
+        bod = new MyPoint(10,5);
+        k = 0;
+        gameOver = false;
+    }
 }
