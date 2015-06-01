@@ -59,7 +59,7 @@ public class Game {
                         snake.get(0).setX(0);
                     break;
             }
-            for (int i = 1; i < snake.size()-1; i++){
+            for (int i = 1; i < snake.size(); i++){
                 if (snake.get(i).getX() == snake.get(0).getX() && snake.get(i).getY() == snake.get(0).getY()){
                     gameOver = true;
                 }
