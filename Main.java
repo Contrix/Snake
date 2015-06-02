@@ -134,7 +134,9 @@ public class Main extends Application {
                     gm.setKey(3);
                     break;
                 case F5:
-                    gm.reset();
+                    if (gm.getGameOver()){
+                        gm.reset();
+                    }
                     break;
                 case ESCAPE:
                     primaryStage.close();
