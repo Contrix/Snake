@@ -136,6 +136,9 @@ public class Main extends Application {
                 case F5:
                     gm.reset();
                     break;
+                case ESCAPE:
+                    primaryStage.close();
+                    break;
                 default:
                     break;
             }
